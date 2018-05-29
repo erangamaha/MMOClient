@@ -1,0 +1,45 @@
+﻿<Window x:Class="MMOClient.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MMOClient"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="358.303" Width="544.405" Loaded="Window_Loaded" WindowStartupLocation="CenterScreen" >
+    <Grid x:Name="grid" Background="#FF95AFC0">
+        <Label x:Name="lblConPlayer" Content="CONNECTED PLAYERS" HorizontalAlignment="Left" Margin="322,19,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="132" FontFamily="Segoe UI Black" Foreground="#FF7D0000">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.483"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <ListBox x:Name="listConPlayer" HorizontalAlignment="Left" Height="218" Margin="282,46,0,0" VerticalAlignment="Top" Width="216" Background="#FF7ED6DF" BorderBrush="#FF95AFC0"/>
+        <ListBox x:Name="listServer" HorizontalAlignment="Left" Height="218" Margin="41,46,0,0" VerticalAlignment="Top" Width="216" Background="#FF7ED6DF" BorderBrush="#FF7ED6DF"/>
+        <Label x:Name="lblserver" Content="SERVERS" HorizontalAlignment="Left" Margin="114,19,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="68" FontFamily="Segoe UI Black" Foreground="#FF7D0000">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.483"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Button x:Name="btnJoinServer" Content="JOIN SERVER" HorizontalAlignment="Left" Margin="390,278,0,0" VerticalAlignment="Top" Width="106" Height="25" Background="#FF686DE0" Foreground="White" FontWeight="Bold"/>
+        <Button Content="V&#xD;&#xA;" HorizontalAlignment="Left" Height="31" Margin="4,5,0,0" VerticalAlignment="Top" Width="31" RenderTransformOrigin="0.5,0.5" Background="Red" FontFamily="Calibri" FontSize="18" FontWeight="Bold" Click="Button_Click" BorderBrush="{x:Null}">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+
+    </Grid>
+</Window>

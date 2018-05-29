@@ -1,0 +1,17 @@
+﻿<Window x:Class="MMOClient.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MMOClient"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="210.854" Width="430.45" WindowStyle="None" WindowStartupLocation="CenterScreen" >
+    <Grid Background="#FFC7ECEE">
+        <Button x:Name="btnLogin" Content="LOGIN" HorizontalAlignment="Left" Height="30" Margin="167,143,0,0" VerticalAlignment="Top" Width="90" Foreground="Black" Background="#FFFFF459" BorderBrush="#FFFFEE00" FontFamily="Segoe UI Black" FontWeight="Bold" FontSize="16" Click="btnLogin_Click"/>
+        <Button x:Name="btnCloase" Content="CLOSE" HorizontalAlignment="Left" Height="30" Margin="281,143,0,0" VerticalAlignment="Top" Width="90" Click="btnCloase_Click" Background="#FFFF4242" BorderBrush="Red" Foreground="Black" FontFamily="Segoe UI Black" FontSize="16"/>
+        <TextBox x:Name="txtBoxUsername" HorizontalAlignment="Left" Height="30" Margin="126,32,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="244" Background="#FFE0E0E0"/>
+        <PasswordBox x:Name="pwdBoxPwd" HorizontalAlignment="Left" Margin="127,80,0,0" VerticalAlignment="Top" Width="244" Height="30" Background="#FFE0E0E0"/>
+        <Label x:Name="lblUsername" Content="Username" HorizontalAlignment="Left" Margin="37,36,0,0" VerticalAlignment="Top" FontFamily="Swis721 Blk BT" FontWeight="Bold"/>
+        <Label x:Name="lblPassword" Content="Password" HorizontalAlignment="Left" Margin="39,85,0,0" VerticalAlignment="Top" FontFamily="Swis721 Blk BT"/>
+    </Grid>
+</Window>
